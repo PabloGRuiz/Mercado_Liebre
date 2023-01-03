@@ -1,0 +1,382 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+
+/* Fuente */
+
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: #ebebeb;
+}
+
+h3 {
+  font-size: 24px;
+}
+
+p {
+  font-size: 12px;
+}
+
+/* Header */
+
+div.top-header {
+  padding: 5%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+header {
+  background-color: #eac926;
+}
+
+header div.logo {
+  padding: 10px;
+  width: 50%;
+}
+
+header nav {
+  font-size: 12px;
+}
+
+header ul li {
+  list-style-type: none;
+}
+
+header ul li a {
+  text-decoration: none;
+  color: #000;
+}
+
+header .form {
+  width: 50%;
+}
+
+header .form .input {
+  background-color: #fff;
+  border: 1px solid #000;
+  outline: none;
+  color: #666;
+  padding: 2px;
+}
+
+header .form .submit {
+  background-color: #fff;
+  border: 1px solid #000;
+  color: #666;
+  width: 10%;
+}
+
+header div.top-header p {
+  width: 100%;
+  text-align: center;
+  margin-top: 10px;
+}
+
+div.burger-menu {
+  text-align: center;
+}
+
+div.burger-menu i {
+  background-color: #0044aa;
+  border-radius: 5px;
+  color: #fff;
+  font-size: 20px;
+  height: 40px;
+  margin: 10px 0px 20px 0px;
+  padding: 10px;
+  width: 40px;
+}
+
+/* Body Formato */
+
+article div.main-article {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  border-top: 1px solid #ebebeb;
+  padding: 15px;
+}
+
+.price {
+  width: 30%;
+  font-size: 18px;
+}
+
+.discount,
+.description {
+  font-size: 16px;
+  font-weight: normal;
+}
+
+h3,
+.description {
+  color: #666;
+}
+
+.description{
+  display: none;
+  margin-top: 20px;
+}
+
+section.banner img {
+  width: 100%;
+}
+
+/* Main */
+
+main {
+  width: 90%;
+  margin: 0 auto;
+}
+
+main section article {
+  background-color: #fff;
+  margin: 10px 0px;
+}
+
+main section article img {
+  width: 100%;
+}
+
+main section article i,
+.discount {
+  width: 70%;
+  color: #39b54a;
+}
+
+.truck-icon {
+  display: block;
+  font-size: 16px;
+  padding: 5px;
+  width: 30px;
+  height: 30px;
+  border: 1px solid #39b54a;
+  background-color: #FFF;
+  border-radius: 50%;
+  position: absolute;
+  right: 20px;
+  top: -15px;
+}
+
+main section h3{
+  margin: 20px 0px;
+}
+
+header ul {
+  margin-bottom: 16px;
+}
+
+main.login form #txfUser:invalid {
+  border: 1px solid red;
+}
+
+/* Footer */
+
+footer div{
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  height: auto;
+  border: lightgrey 2px solid;
+  padding-top: 5px;
+}
+
+footer div article.tarjeta{
+  width: 25%;
+  margin: 5px;
+}
+
+/* login y register */
+
+main.register{
+  background-color: white;
+  border-radius: 1%;
+
+  width: 90%;
+  height: 840px;
+
+  margin-top: 15px;
+  margin-bottom: 15px;
+
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+
+  padding: 10px;
+}
+
+main.register input {
+  background-color: white;
+  color: #000;
+
+  border-radius: 5px;
+  width: 90%;
+  height: 1.5rem;
+
+  margin-top: 5%;
+
+  text-align: center;
+}
+
+div.profile{
+  display: flex;
+  align-items: center;
+}
+
+div.profile label{
+  position: relative;
+  top: 7px;
+  right: 10px;
+}
+
+main.register h4{
+  text-align: start;
+  padding-top: 10px;
+}
+
+main.login{
+  display: flex;
+  justify-content: center; 
+  
+}
+
+main.login .username{
+  background-color: white;
+  color: #000;
+
+  border-radius: 5px;
+  height: 2.5rem;
+
+  margin-top: 5%;
+
+  text-align: center;
+}
+
+main.login .password{
+  background-color: white;
+  color: #000;
+
+  border-radius: 5px;
+  height: 2.5rem;
+
+  margin-top: 10%;
+
+  text-align: center;
+}
+
+button.send{
+  background-color: #0044aa;
+  color: #ebebeb;
+
+  border-radius: 5px;
+  height: 2.5rem;
+  width: 100%;
+  margin-top: 10%;
+
+  text-align: center; 
+}
+
+main.login form #txfUser:invalid {
+  border: 1px solid red;
+}
+
+@media (min-width: 361px){
+  main section article .description{
+      display: block;
+  }
+
+  main section article{
+      box-shadow: 0px 0px 10px rgb(100, 100, 100);
+      cursor: pointer;
+      transition: all 400ms ease;
+  }
+
+  main section article:hover{
+      box-shadow: inset;
+      box-shadow: 5px 5px 20px rgb(100, 100, 100);
+      transform: translateY(-3%);
+  }
+
+  main section .products {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0px 16px;
+    justify-content: center;
+  }
+
+  main section .products article {
+    width: 48%;
+  }
+
+  .main-article .discount{
+    margin-left: 1px;
+  }
+
+  main.register{
+    width: 40%;
+    height: 100%;
+  }
+}
+
+/* efecto hover */
+
+@media (min-width: 769px) {
+  main section .products article {
+    width: 24%;
+  }
+
+  header div.logo {
+    width: 30%;
+  }
+
+  header .form {
+    width: 30%;
+  }
+
+  header div.top-header p {
+    width: 40%;
+    margin-top: 0;
+  }
+
+  header nav {
+    display: flex;
+  }
+
+  header nav ul {
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    gap: 24px;
+  }
+  
+  header nav ul:nth-child(1) {
+    padding-left: 64px;
+  }
+
+  header nav ul:nth-child(2) {
+    justify-content: flex-end;
+    padding-right: 64px;
+  }
+
+  div.burger-menu {
+    display: none;
+  }
+
+  main.login .username{
+    width: 40rem;
+  }
+
+  main.login .password{
+    width: 40rem;
+  }
+
+  div.profile label{
+    position: relative;
+    top: 12px;
+    right: 15px;
+  }
+}
